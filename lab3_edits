@@ -4,16 +4,20 @@
 #coffee variable and muffin variable
 #sum of variables
 #tax of sum with equation
+#add 2 more menu items
 
 print('*************************************** \nMy Coffee and Muffin Shop Receipt\n***************************************')
-value1 = input('How many coffee(s) bought?:\n ')
-
-value2 = input('How many muffin(s) bought?:\n ')
+value1 = input('How many coffees bought?:\n ')
+value2 = input('How many muffins bought?:\n ')
+value3 = input('How many chocolate chip cookies bought?:\n ')
+value4 = input('How many donuts bought?:\n ')
 
 x = int(value1) * 5
 y = int(value2) * 4
+a = int(value3) * 2
+b = int(value4) * int(3.5)
 
-total = x + y
+total = x + y + a + b
 totalprice = total
 formatted_price = "{:.2f}".format(totalprice)
 
@@ -32,7 +36,21 @@ if int(value2) == 1 :
 else:
     print(value2,"Muffins bought at $4.00 each: ${}".format(formatted_price))
 
-total = x + y
+price3 = a
+formatted_price = "{:.2f}".format(price3)
+if int(value3) == 1 :
+    print(value3,"Chocolate chip cookie bought at $2.00 each: ${}".format(formatted_price))
+else:
+    print(value3,"Chocolate chip cookies bought at $2.00 each: ${}".format(formatted_price))
+
+price4 = b
+formatted_price = "{:.2f}".format(price4)
+if int(value4) == 1 :
+    print(value4,"Donut bought at $3.50 each: ${}".format(formatted_price))
+else:
+    print(value4,"Donuts bought at $3.50 each: ${}".format(formatted_price))
+
+total = x + y + a + b
 totalprice = total
 formatted_price = "{:.2f}".format(totalprice)
 print("Total: ${}".format(formatted_price))
