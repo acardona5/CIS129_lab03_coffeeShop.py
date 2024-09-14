@@ -19,4 +19,4 @@ My Coffee and Muffin Shop Receipt
 ---------
 Total: $ 13.78
 ***************************************
-Then Update the program with two more menu items so the Coffee Shop has 4 items that users can purchase. 
+
