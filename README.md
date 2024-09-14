@@ -1,59 +1,22 @@
 # CIS129_lab03_coffeeShop.py
-#tile of receipt
-#enter input of number of coffees and muffins
-#two variables
-#coffee variable and muffin variable
-#sum of variables
-#tax of sum with equation
+Design and test your program in the IDE of your choice (Jupyter Notebook, IPython, IDLE).
+Display a receipt formatted EXACTLY like the below sample output. Note: In this example, the user has input the values 1 and 2 in response to the prompts, but any numbers could be entered.
 
-print('*************************************** \nMy Coffee and Muffin Shop Receipt\n***************************************')
+Example:
+***************************************
+My Coffee and Muffin Shop
+Number of coffees bought?
+1
+Number of muffins bought?
+2
+***************************************
 
-value1 = input('How many coffee(s) bought?:\n ')
-value2 = input('How many muffin(s) bought?:\n ')
-
-x = int(value1) * 5
-y = int(value2) * 4
-
-total = x + y
-totalprice = total
-formatted_price = "{:.2f}".format(totalprice)
-
-print('*************************************** \n\n***************************************\n')
-
-price = x
-formatted_price = "{:.2f}".format(price)
-
-if int(value1) == 1 :
-    print(value1,"Coffee bought at $5.00 each: ${}".format(formatted_price))
-else:
-    print(value1,"Coffees bought at $5.00 each: ${}".format(formatted_price))
-
-price2 = y
-formatted_price = "{:.2f}".format(price2)
-
-if int(value2) == 1 :
-    print(value2,"Muffin bought at $4.00 each: ${}".format(formatted_price))
-else:
-    print(value2,"Muffins bought at $4.00 each: ${}".format(formatted_price))
-
-total = x + y
-totalprice = total
-formatted_price = "{:.2f}".format(totalprice)
-print("Total: ${}".format(formatted_price))
-
-print('*************************************** \n\n***************************************\n')
-
-z = total * 0.060
-print('+6.00% tax')
-taxesprice = z
-formatted_price = "{:.2f}".format(taxesprice)
-print('+ ${} added tax'.format(formatted_price))
-
-print('---------')
-
-taxprice = total + z
-formatted_price ="{:.2f}".format(taxprice)
-print("Total: ${}".format(formatted_price))
-print('Enjoy Your coffee! ^-^')
-
-print('***************************************')
+***************************************
+My Coffee and Muffin Shop Receipt
+1 Coffee at $5 each: $ 5.00
+2 Muffins at $4 each: $ 8.00
+6% tax: $ .78
+---------
+Total: $ 13.78
+***************************************
+Then Update the program with two more menu items so the Coffee Shop has 4 items that users can purchase. 
