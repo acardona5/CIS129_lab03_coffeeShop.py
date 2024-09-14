@@ -4,11 +4,13 @@
 #coffee variable and muffin variable
 #sum of variables
 #tax of sum with equation
+#add 2 more menu items
 
 print('*************************************** \nMy Coffee and Muffin Shop Receipt\n***************************************')
-value1 = input('How many coffee(s) bought?:\n ')
-
-value2 = input('How many muffin(s) bought?:\n ')
+value1 = input('How many coffees bought?:\n ')
+value2 = input('How many muffins bought?:\n ')
+value3 = input('How many chocolate chip cookies bought?:\n ')
+value4 = input('How many donuts bought?:\n ')
 
 x = int(value1) * 5
 y = int(value2) * 4
